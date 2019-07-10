@@ -40,7 +40,6 @@ export default {
         });
         this.styles = styles;
         this.changeSkin(styles);
-        console.log(styles);
       });
     },
     changeSkin(originalStyle) {
@@ -56,6 +55,7 @@ export default {
           selectObj[key]
         );
       });
+      debugger
       const style = document.createElement("style");
       style.innerText = originalStyle;
       style.id = "theme-style";
